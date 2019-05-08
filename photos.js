@@ -1,7 +1,7 @@
 // CHRIS FIXED LINK TO ZOOM.HTML
 
 //KIRSTIE WORKED ON THE PHOTOS AND FIXED THE ZOOM 
-//PLEASE OPEN IN FIREFOX 
+//PLEASE OPEN IN FIREFOX FOR THE ZOOM TO WORK PROPERLY
 
 "use strict"; // interpret document contents in JavaScript strict mode
 
