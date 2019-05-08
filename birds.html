@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<!-- Ryan Clark UPDATED THIS PAGE WITH Chris S Updates from main pages - CSS FILES TO MAKE PAGE RESPONSIVE TO SCREEN SIZES AND STYLE -->
+<html lang="en">
+
+	<div id = "wrapper">
+	<head>
+		<meta charset="utf-8">
+		
+		<meta name= "description" content= " ">
+		
+		<meta name= "viewport" content="width=device-width, initial-scale=1.0">
+		<meta name= "viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,">
+		<meta name= "viewport" content="width-device-width, user-scalable=no"/>
+		
+		<meta name= "keywords" content= " ">
+		
+		<title> Chicken and Turkeys </title>
+		
+		<div id = "page_title">
+		
+		</div>
+		
+		<link type="text/css" rel="stylesheet" href="bdf_stylesheet.css"/>
+		<link rel="stylesheet" href="responsive.css">
+		<link rel="stylesheet" href="sidenav2.css">
+	</head>
+<body>
+
+<header id="header">
+
+	<nav class="snav-sidenav snav-white snav-animate-left" style="display:none; z-index:5; position:fixed;" id="mySidenav">
+		<h4><a href="javascript:void(0)" onclick="snav_close()" class="snav-closenav snav-large" style="color:red; text-shadow:none;">Close ×</a></h4>
+  
+		<a href="index.html">Home</a>
+		<a href="photos.html">Photo Gallery</a>
+		<a href="events_calendar.html" target="_self">Events Calendar</a>
+		<div class="dropdown">
+		<a href="farm_members.html">Farming Area's</a>
+				<div class="dropdown-list">
+	
+					<a href="llamas.html">Llamas</a>
+					<a href="goats.html">Goats</a>
+					<a href="sheep.html">Sheep</a>
+					<!--<a href="birds.html">Chicken and Turkeys</a>-->
+					<a href="bees.html">Bees</a>
+					<a href="garden.html">Garden</a>		
+					
+				</div>
+		</div>
+		<a href="blog.html" target="_self">Blog</a>
+		<a href="estimate.html" target="_self">For Sale</a>
+		<a href="recommended_sites.html" target="_self">Recommended Sites</a>
+		<a href="contact_us.html" target="_self">Contact Us</a>
+		<a href="purchase.html" target="_self">Purchase SWAG</a>
+		<a href="about_us.html" target="_self">About Us</a>
+
+	</nav>
+
+<div class="snav-overlay snav-animate-opacity" onclick="snav_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="snav-container">
+  <span class="snav-opennav snav-xxlarge" onclick="snav_open()" style="position: fixed;">Menu ☰</span></div>
+  
+</header>
+	
+<h1> Chicken and Turkeys </h1>
+
+<script>
+function snav_open() 
+{
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+function snav_close() 
+{
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+</script>	
+	<main>
+	<div id = "main_content">	
+	<h2> Chickens and turkeys and ducks... oh my.</h2>
+		<p>We raise our free range chicken, turkeys and ducks for four primary purposes.  They provide eggs, free range on insects including ticks and mosquitoes, provide a very good fertiler to add back into our soil and are a source of meat for our table.</p>
+	<img src="Images/chickens_variety.jpg" alt="chickens and turkeys" width="450" height="266" title="Variety"> 
+		<br>
+		<img src="Images/chickens_freerange.jpg" alt="chickens_freerange" width="404" height="404" title="Free Range"> 
+	<h3>Chickens</h3>
+		<p>
+		We focus on creating the most natural environment for our chickens.  They free range during the day and locked up at night.  We also believe in variety in our birds.  Perhaps the most exciting addition to our flock is some easter eggers.
+		<h3>Interesting Chicken Facts</h3>
+			<ul>
+				<li>chickens are a domestic subspecies of the pheasant</li>
+				<li>chickens have very poor flying skills</li>
+				<li>originally domesticated for cockfights</li>
+				<li>not only do they eat insect and seeds but alos small mice and lizards </li>
+				<li>their are more than 25 billion chickens in the world more then any other bird</li>
+			</ul>
+	<br>
+	<img src="Images/turkey_tom.jpg" alt="burbonred_turkey" width="340" height="225" title="Turkey Tom">
+	<h3> Turkeys </h3>
+		Our breeding pair will be used to build our own flock. They are also used for meat especially around Thanksgiving.
+		<h3>Intresting Turkey Facts</h3>
+					<ul>
+						<li>there are over 7 million wild turkeys today</li>
+						<li>adult males weight 16 to 20 pounds while females weigh 8 to 12 pounds</li>	
+						<li>turkeys can run at speeds of up to 25 miles per hour</li>
+					</ul>
+	<br>
+	<img src="Images/ducks.jpg" alt="various ducks" width="340" height="225" title="Some of our ducks">
+	<h3> Ducks </h3>
+		We have several types of ducks.  They are a great source of fertilzer, produce eggs and are a source of meat for our table. 
+		<h3>Intresting Duck Facts</h3>
+					<ul>
+						<li>ducks are related to swans and geese</li>
+						<li>all domestic ducks descended from either a Mallard or Muscoy Duck</li>	
+						<li>their webbed feet have no nerves or blood vessels allowing them to handle the cold with ease </li>
+						<li>duck eggs are richer and thus better for baking with</li>
+						<li>duck eggs have more Omega-3 fatty acids</li>
+					</ul>
+	</p>		
+	</main>
+	</div>
+	</div>
+</body>
+<footer>
+				
+				<link>
+				<a href= "mailto:bigdreamfarm.com@gmail.com">Contact bigDREAMfarm</a>
+				</link> 
+			</footer> 
+</html>

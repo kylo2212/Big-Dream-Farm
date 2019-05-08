@@ -1,0 +1,392 @@
+<DOCTYPE! html>
+     <!-- CHRIS SHARKEY UPDATED THIS PAGE WITH CSS FILES TO MAKE PAGE RESPONSIVE TO SCREEN SIZES AND STYLE -->
+
+<html lang="en" Style="background-color: #66cccc">
+
+	<div id = "wrapper">
+	<head>
+		<meta charset="utf-8">
+		
+		<meta name= "description" content= " ">
+		
+		<meta name= "viewport" content="width=device-width, initial-scale=1.0">
+		<meta name= "viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,">
+		<meta name= "viewport" content="width-device-width, user-scalable=no"/>
+		
+		<meta name= "keywords" content= " ">
+		
+		<title> Big Dream Farm: TShirt </title>
+		
+		
+	
+		<link rel="stylesheet" href="responsive.css">
+		<link rel="stylesheet" href="bdf_stylesheet_new.css">
+		<link rel="stylesheet" href="sidenav2.css">
+		
+		<script src="modernizr.custom.65897.js"></script>	
+	</head>
+
+<body Style="background-color: #66cccc;">
+
+<header id="header">
+
+	<nav class="snav-sidenav snav-white snav-animate-left" style="display:none; z-index:5; position:fixed; font-size: 180%; width: 70%;" id="mySidenav">
+		<h4><a href="javascript:void(0)" onclick="snav_close()" class="snav-closenav snav-large" style="color:red; text-shadow:none; font-size: 100%;">Close ×</a></h4>
+  
+		<a href="index.html" target="_self">Home</a>
+		<a href="photos.html">Photo Gallery</a>
+		<a href="events_calendar.html" target="_self">Events Calendar</a>
+		<div class="dropdown">
+		<a href="farm_members.html">Farming Area's</a>
+				<div class="dropdown-list">
+	
+					<a href="llamas.html">Lammas</a>
+					<a href="goats.html">Goats</a>
+					<a href="sheep.html">Sheep</a>
+					<a href="birds.html">Chicken and Turkeys</a>
+					<a href="bees.html">Bees</a>
+					<a href="garden.html">Garden</a>		
+					
+				</div>
+		</div>
+		<a href="blog.html" target="_self">Blog</a>
+		<a href="estimate.html" target="_self">For Sale</a>
+		<a href="recommended_sites.html" target="_self">Recommended Sites</a>
+		<a href="contact_us.html" target="_self">Contact Us</a>
+		<a href="about_us.html" target="_self">About Us</a>
+
+	</nav>
+
+<div class="snav-overlay snav-animate-opacity" onclick="snav_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="snav-container">
+  <span class="snav-opennav snav-xxlarge" onclick="snav_open()" style="position: fixed;">Menu ☰</span></div>
+  
+</header>
+
+<script>
+function snav_open() 
+{
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+function snav_close() 
+{
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+</script>
+
+		<div class = "container">	
+		<h1><img src="bdf.PNG" alt="bdf_logo" width="auto" height="auto" title="Big Dream Farm Logo"> </h1>
+	</div>
+	<article>
+		<h2>Place Your Order</h2>
+		<div id="errorText"></div>
+		<form action="results.html" novalidate="novalidate">
+			<fieldset id = "contact" class="text">
+				<legend>Contact Information</legend>
+				<label for= "user_name">Name:</label>
+				<input id="user_name" name="user_name" type="text" 
+				placeholder="your first last name"> 
+				<div id="errorText"></div>
+				<label for="email_address">Email:</label> 
+				<input type="email" name="email_address" id="email_address" placeholder="you@yourdomain.com">
+				<div class="fullContact"></div>
+				<div class="errorMessage"></div>		
+			</fieldset>
+			
+			<fieldset id="message" class="checks">
+				<legend>Message</legend>
+				<input id="congrats" name="Bee Prepared!" type="checkbox" />
+				<label for="congrats">Bee Prepared!</label>
+				<input id="bday" name="Goat To Go!" type="checkbox" />
+				<label for="bday">Goat To Go!</label>
+				<input id="anniv" name="Feeling Sheepish Today" type="checkbox" />
+				<label for="anniv">Feeling Sheepish Today?</label>
+				<input id="love" name="Spit Happens!" type="checkbox" />
+				<label for="love">Spit Happens!</label>
+				<input id="custom" name="CustomMessage" type="checkbox" />
+				<label for="custom">Custom message:</label>
+				<textarea id="customText" name="CustomText" placeholder="Enter custom message here (max 250 characters)"></textarea>
+				<div class="errorMessage"></div>
+			</fieldset>
+			
+			<fieldset id = "size" class='checks'>
+				<legend>Size</legend>
+				<input type="radio" name="shirtSize" id="small" required="required" value="small"/>
+				<label for = "small">Small</label>
+				<input type="radio" name="shirtSize" id="medium" required="required" value="medium"/>
+				<label for = "medium">Medium</label>
+				<input type="radio" name="shirtSize" id="large" required="required" value="large"/>
+				<label for = "large">Large</label>
+				<input type="radio" name="shirtSize" id="xl" required="required" value="xl"/>
+				<label for = "xl">Extra Large</label>
+				<div class="errorMessage"></div>
+			</fieldset>
+			
+			<fieldset id="billingAddress" class="text">
+				<legend>Billing Address</legend>
+				<label for="billFName">First Name</label>
+				<input id="billFName" name="BillingFirstName" type="text" required="required" />
+				<label for="billLName">Last Name</label>
+				<input id="billLName" name="BillingLastName" type="text" required="required" />
+				<label for="billStreet">Street Address</label>
+				<input id="billStreet" name="BillingStreet" type="text" required="required" />
+				<label for="billCity">City</label>
+				<input id="billCity" name="BillingCity" type="text" required="required" />
+				<label for="billState">State</label>
+				<select id="billState" name="BillingState" required="required">
+				   <option value="AL">AL</option>
+				   <option value="AK">AK</option>
+				   <option value="AZ">AZ</option>
+				   <option value="AR">AR</option>
+				   <option value="CA">CA</option>
+				   <option value="CO">CO</option>
+				   <option value="CT">CT</option>
+				   <option value="DE">DE</option>
+				   <option value="DC">DC</option>
+				   <option value="FL">FL</option>
+				   <option value="GA">GA</option>
+				   <option value="HI">HI</option>
+				   <option value="ID">ID</option>
+				   <option value="IL">IL</option>
+				   <option value="IN">IN</option>
+				   <option value="IA">IA</option>
+				   <option value="KS">KS</option>
+				   <option value="KY">KY</option>
+				   <option value="LA">LA</option>
+				   <option value="ME">ME</option>
+				   <option value="MD">MD</option>
+				   <option value="MA">MA</option>
+				   <option value="MI">MI</option>
+				   <option value="MN">MN</option>
+				   <option value="MS">MS</option>
+				   <option value="MO">MO</option>
+				   <option value="MT">MT</option>
+				   <option value="NE">NE</option>
+				   <option value="NV">NV</option>
+				   <option value="NH">NH</option>
+				   <option value="NJ">NJ</option>
+				   <option value="NM">NM</option>
+				   <option value="NY">NY</option>
+				   <option value="NC">NC</option>
+				   <option value="ND">ND</option>
+				   <option value="OH">OH</option>
+				   <option value="OK">OK</option>
+				   <option value="OR">OR</option>
+				   <option value="PA">PA</option>
+				   <option value="RI">RI</option>
+				   <option value="SC">SC</option>
+				   <option value="SD">SD</option>
+				   <option value="TN">TN</option>
+				   <option value="TX">TX</option>
+				   <option value="UT">UT</option>
+				   <option value="VT">VT</option>
+				   <option value="VA">VA</option>
+				   <option value="WA">WA</option>
+				   <option value="WV">WV</option>
+				   <option value="WI">WI</option>
+				   <option value="WY">WY</option>
+				</select>
+				<label for="billZip">Zip</label>
+				<input id="billZip" name="BillingZip" type="number" required="required" />
+				<label for="billPhone">Phone</label>
+				<input id="billPhone" name="BillingPhone" type="number" required="required" />
+				<div class="errorMessage"></div>
+			</fieldset>
+         
+			<fieldset id="deliveryAddress" class="text">
+				<legend>Delivery Address</legend>
+				<div class="checks">
+				   <input id="sameAddr" name="SameAddress" type="checkbox" />
+				   <label for="sameAddr">same as billing address</label>
+				</div>
+				<label for="delivFName">First Name</label>
+				<input id="delivFName" name="DeliveryFirstName" type="text" required="required" />
+				<label for="delivLName">Last Name</label>
+				<input id="delivLName" name="DeliveryLastName" type="text" required="required" />
+				<label for="delivStreet">Street Address</label>
+				<input id="delivStreet" name="DeliveryStreet" type="text" required="required" />
+				<label for="delivCity">City</label>
+				<input id="delivCity" name="DeliveryCity" type="text" required="required" />
+				<label for="delivState">State</label>
+				<select id="delivState" name="DeliveryState" required="required">
+				   <option value="AL">AL</option>
+				   <option value="AK">AK</option>
+				   <option value="AZ">AZ</option>
+				   <option value="AR">AR</option>
+				   <option value="CA">CA</option>
+				   <option value="CO">CO</option>
+				   <option value="CT">CT</option>
+				   <option value="DE">DE</option>
+				   <option value="DC">DC</option>
+				   <option value="FL">FL</option>
+				   <option value="GA">GA</option>
+				   <option value="HI">HI</option>
+				   <option value="ID">ID</option>
+				   <option value="IL">IL</option>
+				   <option value="IN">IN</option>
+				   <option value="IA">IA</option>
+				   <option value="KS">KS</option>
+				   <option value="KY">KY</option>
+				   <option value="LA">LA</option>
+				   <option value="ME">ME</option>
+				   <option value="MD">MD</option>
+				   <option value="MA">MA</option>
+				   <option value="MI">MI</option>
+				   <option value="MN">MN</option>
+				   <option value="MS">MS</option>
+				   <option value="MO">MO</option>
+				   <option value="MT">MT</option>
+				   <option value="NE">NE</option>
+				   <option value="NV">NV</option>
+				   <option value="NH">NH</option>
+				   <option value="NJ">NJ</option>
+				   <option value="NM">NM</option>
+				   <option value="NY">NY</option>
+				   <option value="NC">NC</option>
+				   <option value="ND">ND</option>
+				   <option value="OH">OH</option>
+				   <option value="OK">OK</option>
+				   <option value="OR">OR</option>
+				   <option value="PA">PA</option>
+				   <option value="RI">RI</option>
+				   <option value="SC">SC</option>
+				   <option value="SD">SD</option>
+				   <option value="TN">TN</option>
+				   <option value="TX">TX</option>
+				   <option value="UT">UT</option>
+				   <option value="VT">VT</option>
+				   <option value="VA">VA</option>
+				   <option value="WA">WA</option>
+				   <option value="WV">WV</option>
+				   <option value="WI">WI</option>
+				   <option value="WY">WY</option>
+				</select>
+				<label for="delivZip">Zip</label>
+				<input id="delivZip" name="DeliveryZip" type="number" required="required" />
+				<label for="delivPhone">Phone</label>
+				<input id="delivPhone" name="DeliveryPhone" type="number" required="required" />
+				<div class="errorMessage"></div>
+			</fieldset>
+         
+			<fieldset id="deliveryDate" class="checks">
+				<legend>Delivery Date</legend>
+				<div class="inline" id="delivDate">
+				   <select id="delivMo" name="DelivMonth" required="required">
+					  <option value="1">January</option>
+					  <option value="2">February</option>
+					  <option value="3">March</option>
+					  <option value="4">April</option>
+					  <option value="5">May</option>
+					  <option value="6">June</option>
+					  <option value="7">July</option>
+					  <option value="8">August</option>
+					  <option value="9">September</option>
+					  <option value="10">October</option>
+					  <option value="11">November</option>
+					  <option value="12">December</option>
+				   </select>
+				   <select id="delivDy" name="DelivDay" required="required">
+					  <option value="1">1</option>
+					  <option value="2">2</option>
+					  <option value="3">3</option>
+					  <option value="4">4</option>
+					  <option value="5">5</option>
+					  <option value="6">6</option>
+					  <option value="7">7</option>
+					  <option value="8">8</option>
+					  <option value="9">9</option>
+					  <option value="10">10</option>
+					  <option value="11">11</option>
+					  <option value="12">12</option>
+					  <option value="13">13</option>
+					  <option value="14">14</option>
+					  <option value="15">15</option>
+					  <option value="16">16</option>
+					  <option value="17">17</option>
+					  <option value="18">18</option>
+					  <option value="19">19</option>
+					  <option value="20">20</option>
+					  <option value="21">21</option>
+					  <option value="22">22</option>
+					  <option value="23">23</option>
+					  <option value="24">24</option>
+					  <option value="25">25</option>
+					  <option value="26">26</option>
+					  <option value="27">27</option>
+					  <option value="28">28</option>
+					  <option value="29">29</option>
+					  <option value="30">30</option>
+					  <option value="31">31</option>
+				   </select>
+				   <select id="delivYr" name="DelivYear" required="required">
+					  <option value="2017">2018</option>
+					  <option value="2018">2019</option>
+				   </select>
+				</div>
+				<div class="errorMessage"></div>
+			</fieldset>
+			
+			<fieldset id="paymentInfo" class="text">
+				<legend>Payment</legend>
+				<div id="cards" class="inline">
+				   <input id="visa" name="PaymentType" type="radio" value="Visa" />
+				   <label for="visa">Visa</label>
+				   <input id="mc" name="PaymentType" type="radio" value="MC" />
+				   <label for="mc">Master Card</label>
+				   <input id="discover" name="PaymentType" type="radio" value="Discover" />
+				   <label for="discover">Discover</label>
+				   <input id="amex" name="PaymentType" type="radio" value="AmEx" />
+				   <label for="amex">American Express</label>
+				</div>
+				<div>
+				   <label for="ccNum">Card #</label>
+				   <input id="ccNum" name="CardNumber" type="number" required="required" />
+				   <div id="ccNumErrorMessage"></div>
+				</div>
+				<div>
+				   <label>Expiration</label>
+				   <div class="inline" id="exp">
+					  <label for="expMo" id="expMoLabel">Expiration Month</label>
+					  <select id="expMo" name="ExpMonth" required="required">
+						 <option value="01">01</option>
+						 <option value="02">02</option>
+						 <option value="03">03</option>
+						 <option value="04">04</option>
+						 <option value="05">05</option>
+						 <option value="06">06</option>
+						 <option value="07">07</option>
+						 <option value="08">08</option>
+						 <option value="09">09</option>
+						 <option value="10">10</option>
+						 <option value="11">11</option>
+						 <option value="12">12</option>
+					  </select>
+					  <label for="expYr" id="expYrLabel">Expiration Year</label>
+					  <select id="expYr" name="ExpYear" required="required">
+						 <option value="2017">2018</option>
+						 <option value="2018">2019</option>
+						 <option value="2019">2020</option>
+						 <option value="2020">2021</option>
+						 <option value="2021">2022</option>
+					  </select>
+				   </div>
+				   <label for="cvv">CVV</label>
+				   <input id="cvv" name="CVVValue" type="number" required="required" /> 
+				   <div id="cvvErrorMessage"></div>
+				</div>
+				<div class="errorMessage"></div>
+			</fieldset>
+			<div id="buttonContainer">
+            <input type="submit" value="Place Order" id="orderButton" />
+			</div>
+		</form>
+	</article>
+	<footer>
+	</footer> 
+	<script src="purchase.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+body {
+  font-family: "Times New Roman", serif;
+  color: green;
+  background-color: yellow }
+h1 {
+  font-family: Arial;
+  color: green;
+  background-color: white;}
+a:link {
+  color: #CCCCCC }
+a:visited {
+  color: purple }

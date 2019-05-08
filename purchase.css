@@ -1,0 +1,148 @@
+/* form */
+#purchase {
+	margin-left: 90px;
+}
+#purchaseheader {
+	margin-left:100px;
+}
+
+form {
+   width: 75%;
+   margin: 0 auto;
+   padding-bottom: 15px;
+}
+
+fieldset {
+   position: relative;
+   padding: 5px 30px 70px 30px;
+   background: white;
+   border-radius: 5px;
+   margin-left: 15px;
+   margin-right: 15px;
+   margin-bottom: 25px;
+}
+
+fieldset:last-of-type {
+   margin-bottom: 0;
+}
+
+legend {
+   font-weight: bold;
+   font-size: 30px;
+   font-family: tangerine, cursive;
+   position: absolute;
+   padding: 10px 0;
+}
+
+input, label, select, textarea, fieldset p, div.errorMessage, div.fullContact, #ccNumErrorMessage, #cvvErrorMessage {
+   position: relative;
+   top: 50px;
+   line-height: 1.2em;
+}
+
+label, input {
+   display: block;
+}
+
+#expMoLabel, #expYrLabel {
+   position: absolute;
+   left: -10000px;
+}
+
+#buttonContainer {
+   width: 100%;
+   text-align: center;
+}
+
+#orderButton {
+   margin: 0 auto;
+   font-family: tangerine, cursive;
+   font-size: 24px;
+   top: 15px;
+   -webkit-appearance: none;
+   display: inline-block;
+}
+
+#small, #medium, #large, #xl {
+	position: float;
+	padding: 20px;
+}
+
+#smallLabel, #mediumLabel, #largeLabel, #XXlargeLabel {
+	position: float;
+	padding-right: 20px;
+	
+}
+
+fieldset.checks input, div.checks input {
+   float: left;
+   margin-right: 5px;
+}
+
+fieldset.checks textarea {
+   margin-left: 21px;
+   width: 90%;
+   height: 50px;
+}
+
+fieldset.text label {
+   width: 8em;
+   text-align: right;
+   float: left;
+   clear: left;
+   margin-right: 10px;
+   margin-top: 5px;
+}
+
+fieldset.text input, fieldset.text select {
+   margin-top: 5px;
+   margin-right: 5px;
+}
+
+fieldset div.errorMessage, #ccNumErrorMessage, #cvvErrorMessage {
+   display: none;
+   color: red;
+   margin-top: 10px;
+}
+
+#ccNumErrorMessage, #cvvErrorMessage {
+   margin-left: 8.5em;
+}
+
+div.checks label {
+   width: auto;
+   text-align: left;
+   float: none;
+   clear: none;
+}
+
+div.inline label, div.inline input, div.inline select, div.inline div {
+   display: inline-block;
+   float: none;
+   text-align: center;
+   width: auto;
+}
+
+div.inline option {
+   text-align: left;
+}
+
+#billFName, #billLName, #delivFName, #delivLName, #billCity, #delivCity, #billPhone, #delivPhone {
+   width: 15em;
+}
+
+#billStreet, #delivStreet, #billEmail, #delivEmail {
+   width: 20em;
+}
+
+#billZip, #delivZip {
+   width: 10em;
+}
+
+#ccNum {
+   width: 16em;
+}
+
+#cvv {
+   width: 4em;
+}

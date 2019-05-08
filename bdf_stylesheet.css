@@ -1,0 +1,357 @@
+/* CHRIS SHARKEY UPDATED THIS CSS FOR STYLE AND LAYOUT */
+
+
+html
+{
+	width: 100%;
+	height: auto;
+	-ms-font-size-adjust: 0.58;
+	-webkit-font-size-adjust: 0.58;
+	overflow-x: hidden;
+	font-size: 22px;
+}
+
+head
+{	width: 80%;
+	box-padding: 20%;
+	background-color: #0099CC;
+}
+
+body 
+{
+	width: 80%;
+	height: auto;
+	box-padding: 20%;
+	background-color: #66CCCC;
+	background-image: url(bdf.PNG);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+html, body
+{
+	font-family: Georgia, Times New Roman, Times, serif, sans-serif;
+	color: black;
+	line-height: 1.5;
+}
+
+header
+{
+	width: 100%;
+	height: auto;
+	margin-bottom: 2%;
+	padding: 0;
+	display: flex;
+	display: -webkit-flex;
+}
+
+main 
+{	width: 80%;
+	margin-left: 10%;
+	margin-right:20%;
+	background-color: #FFFFFF;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+footer
+{
+	max-width: 100%;
+	margin: 2%;
+	padding: 2%;
+	font-size: 18px;
+}
+
+div	
+{
+	display: block;
+	box-padding: 5%;
+}
+
+h3 a, p a
+{
+	color:blue;
+	background-color:lightgrey;
+	border: 2px solid white;
+	border-radius: 5px;
+	padding: 0.5%;
+}
+
+h3 a:hover, p a:hover
+{
+	color:lightgrey;
+	background-color:blue;
+	border: 5px solid white;
+	border-radius: 5px;
+	padding: 0.5%;
+}
+
+h1
+{
+	color: #FFFFFF;
+	font-size: 250%;
+	font-family: Arial, Time New Roman, Comic Sans MS;
+	font-weight: bolder;
+	position: relative;
+	text-align: center;
+	text-shadow: 10px 10px 20px darkblue, 0px 0px 25px blue, 0px 0px 5px skyblue;
+	text-justify: auto;	
+}
+
+h2
+{
+	font-size: 120%;
+	text-decoration: none;
+}
+
+h3
+{
+	font-size: 105%;
+}
+
+
+h5
+{
+	font-size: 20px;
+}
+
+h6
+{
+	font-size:75%;
+}
+
+h2,h3,h5,h6
+{
+	color: inherit;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+	
+h1 a,h2 a,h3 a,h5 a,h6 a
+{
+	font-weight:inherit;
+}
+
+/* -------------------------------------  */
+ 
+page_name
+{ 
+	background-color: #CCCCFF;
+}
+
+a:link 
+{
+  color: blue 
+}
+
+a:visited 
+{
+  color: purple 
+}
+
+address 
+{
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: thin dotted; 
+}
+
+form 
+{	
+	background-color:#FFFFFF;
+	font-family:Arial, sans-serif;
+	padding: 10px;
+}
+
+label 
+{
+	float: left;
+	width: 50px;
+	text-align: right;
+	padding-right: 10px;
+	margin-top: 10px;
+}
+		
+input, textarea 
+{	
+	margin-top: 10px;
+}
+
+#submit,#reset 
+{	margin-left: 10px;
+	display:inline;
+} 
+
+.error 
+{	
+	font-family: Arial, sans-serif;
+	font-style: italic;
+	font-size: .90em;
+	color: #FF0000;
+	margin-left: 1em;
+}
+		
+table 
+{
+	border: 5px solid #000066;
+	background-color: #E9E9E9;
+	text-align: center;
+}
+
+.headings 
+{
+	font-weight: bold;
+}
+
+caption 
+{
+	font-weight: bold;
+	font-size: 1.2em;
+	color: white;
+	background-color: #36454f;
+}
+
+td,th 
+{ 
+	border: 1px solid #000066;
+}
+
+#page_title 
+{
+	padding-left: 150px;
+}
+
+#main_img_left
+{
+	transform: rotate(3deg);
+}
+
+#main_img_center
+{
+	
+}
+
+#main_img_right
+{
+	
+}
+	
+
+/* ----------------------------------------------------------------- */
+
+/* additional css for photo.html  */
+
+article 
+{
+   background: white;
+   position: relative;
+   margin: 10%;
+   width: 100%;
+}
+
+#pageTitle
+{
+	font-size: 300%; 
+	padding-top: 5%; 
+	text-align: center; 
+	line-height: 1.5;
+	width: 125%;
+	margin: 0 auto;
+}
+/* article h2 
+{
+   font-size: 1.2em;
+   font-weight: bold;
+   text-align: left;
+   margin: 0 0 10px 51px;
+} */
+
+#leftarrow, #rightarrow 
+{
+   background: #696565;
+   color: white;
+   position: absolute;
+   z-index: 30;
+   text-align: center;
+   height: 135px;
+   width: 40px;
+   top: 67px;
+}
+
+article div:hover 
+{
+   cursor: default;
+}
+
+#leftarrow 
+{
+   left: 0;
+}
+
+#rightarrow 
+{
+   right: 0;
+}
+
+#fiveButton 
+{
+   display: block;
+   width: 100%;
+   position: absolute;
+   top: 290px;
+   color: white;
+   text-align: center;
+}
+
+#fiveButton p 
+{
+   width: 20%;
+   margin: 0 auto;
+   margin-top: 2%;
+   line-height: 2em;
+   background: #696565;
+}
+
+#leftarrow p, #rightarrow p 
+{
+   position: relative;
+   top: 50%;
+   margin-top: -0.5em;
+}
+
+figure 
+{
+   position: absolute;
+   -webkit-box-shadow: 10px 0px 5px rgb(50, 50, 50),
+                       -10px 0px 5px rgb(50, 50, 50);
+   -moz-box-shadow:    10px 0px 5px rgb(50, 50, 50),
+                       -10px 0px 5px rgb(50, 50, 50);
+   box-shadow:         10px 0px 5px rgb(50, 50, 50),
+                       -10px 0px 5px rgb(50, 50, 50);
+}
+
+#fig2 
+{
+   z-index: 10;
+   left: 13%;
+   top: 34px;
+}
+
+#fig3 
+{
+   z-index: 20;
+   left: 50%;
+   margin-left: -240px;
+   top: 0;
+}
+
+#fig4 
+{
+   z-index: 10;
+   right: 13%;
+   top: 34px;
+}
+

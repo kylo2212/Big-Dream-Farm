@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<!-- Ryan Clark UPDATED THIS PAGE WITH Chris S Updates from main pages - CSS FILES TO MAKE PAGE RESPONSIVE TO SCREEN SIZES AND STYLE -->
+<html lang="en">
+
+	<div id = "wrapper">
+	<head>
+		<meta charset="utf-8">
+		
+		<meta name= "description" content= " ">
+		
+		<meta name= "viewport" content="width=device-width, initial-scale=1.0">
+		<meta name= "viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,">
+		<meta name= "viewport" content="width-device-width, user-scalable=no"/>
+		
+		<meta name= "keywords" content= " ">
+		
+		<title> Garden </title>
+		
+		<div id = "page_title">
+		
+		</div>
+		
+		<link type="text/css" rel="stylesheet" href="bdf_stylesheet.css"/>
+		<link rel="stylesheet" href="responsive.css">
+		<link rel="stylesheet" href="sidenav2.css">
+	</head>
+<body>
+
+<header id="header">
+
+	<nav class="snav-sidenav snav-white snav-animate-left" style="display:none; z-index:5; position:fixed;" id="mySidenav">
+		<h4><a href="javascript:void(0)" onclick="snav_close()" class="snav-closenav snav-large" style="color:red; text-shadow:none;">Close ×</a></h4>
+  
+		<a href="index.html">Home</a>
+		<a href="photos.html">Photo Gallery</a>
+		<a href="events_calendar.html" target="_self">Events Calendar</a>
+		<div class="dropdown">
+		<a href="farm_members.html">Farming Area's</a>
+				<div class="dropdown-list">
+	
+					<a href="llamas.html">Llamas</a>
+					<a href="goats.html">Goats</a>
+					<a href="sheep.html">Sheep</a>
+					<a href="birds.html">Chicken and Turkeys</a>
+					<a href="bees.html">Bees</a>
+					<!--<a href="garden.html">Garden</a>-->		
+					
+				</div>
+		</div>
+		<a href="blog.html" target="_self">Blog</a>
+		<a href="estimate.html" target="_self">For Sale</a>
+		<a href="recommended_sites.html" target="_self">Recommended Sites</a>
+		<a href="contact_us.html" target="_self">Contact Us</a>
+		<a href="purchase.html" target="_self">Purchase SWAG</a>
+		<a href="about_us.html" target="_self">About Us</a>
+
+	</nav>
+
+<div class="snav-overlay snav-animate-opacity" onclick="snav_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="snav-container">
+  <span class="snav-opennav snav-xxlarge" onclick="snav_open()" style="position: fixed;">Menu ☰</span></div>
+  
+</header>
+	
+<h1> Garden </h1>
+
+<script>
+function snav_open() 
+{
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+function snav_close() 
+{
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+</script>
+	<main>
+	<div id = "main_content">	
+	<h2> Farm to Table</h2>	
+	<img src="Images/Garden_wide.jpg" alt="garden section" width="651" height="220" title="Our quarter acre garden">
+	<br>
+	<h3>Garden prep and recovery</h3>
+	<p>
+	There is a lot of work that goes into the garden. Early spring we prepare it for tilling under the cover crops.  We spread the bedding from the chicken coop and the llama fertilizer (since the poop in one spot) out on the garden to be tilled in.  Once the weather is ready we plan out where everything will be including building any trellace that is needed.  During the growing season we have to keep the area watered, free of weeds and also utilize Diatomaceous earth to keep the bugs away.  Once the season is over we have to clean out the garden bed and plant a cover crop for the winter.  A lot of work but it is all worth it!
+	</p>
+	<img src="Images/garden_harvest.jpg" alt="summer harvest" width="346" height="207" title="Our first big harvest of the summer"> 
+	<br>
+	<h3> Preserving summer crops</h3>
+	<p>  Durring the summer months we put a big focus on our garden for fresh produce and ensure that any extra gets stored for the winter by canning and dehydrating.</p>
+	<h3>Some of the items that we typically prepare</h3>
+			<ul>
+				<li>jellies of various types (strawberry, grape, peach vanilla, blackberry)</li>
+				<li>specialty jellies (blackberry and peach jalapeno, pear sauce, apple sauce, apple butter, pear butter)</li>
+				<li>canned pickles (dill pickles,bread and butter pickles, bread and butter jalapeno, relish)</li>
+				<li>canned veggies and fruit (green beans, pears, peaches, apples)</li>
+				<li>dehydrated corn, veggies and fruits</li>
+				<li>canned salsa</li>
+				<li>sunflower seeds</li>
+				<li>onions and garlic </li>
+				<li>carrots</li>
+			</ul>
+	<h3>Some of the items we enjoy in season</h3>
+			<ul>
+				<li>potatoes</li>
+				<li>cantaloupe</li>
+				<li>watermellon</li>
+				<li>spagetti squash</li>
+				<li>honeydew</li>
+				<li>rasberries</li>
+			</ul>
+				
+	</main>
+	</div>
+	</div>
+</body>
+<footer>
+				
+				<link>
+				<a href= "mailto:bigdreamfarm.com@gmail.com">Contact bigDREAMfarm</a>
+				</link> 
+			</footer> 
+</html>

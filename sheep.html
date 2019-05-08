@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<!-- Ryan Clark UPDATED THIS PAGE WITH Chris S Updates from main pages - CSS FILES TO MAKE PAGE RESPONSIVE TO SCREEN SIZES AND STYLE --><html lang="en">
+
+	<div id = "wrapper">
+	<head>
+		<meta charset="utf-8">
+		
+		<meta name= "description" content= " ">
+		
+		<meta name= "viewport" content="width=device-width, initial-scale=1.0">
+		<meta name= "viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,">
+		<meta name= "viewport" content="width-device-width, user-scalable=no"/>
+		
+		<meta name= "keywords" content= " ">
+		
+		<title> Sheep </title>
+		
+		<div id = "page_title">
+		
+		</div>
+		
+		<link type="text/css" rel="stylesheet" href="bdf_stylesheet.css"/>
+		<link rel="stylesheet" href="responsive.css">
+		<link rel="stylesheet" href="sidenav2.css">
+	</head>
+<body>
+
+<header id="header">
+
+	<nav class="snav-sidenav snav-white snav-animate-left" style="display:none; z-index:5; position:fixed;" id="mySidenav">
+		<h4><a href="javascript:void(0)" onclick="snav_close()" class="snav-closenav snav-large" style="color:red; text-shadow:none;">Close ×</a></h4>
+  
+		<a href="index.html">Home</a>
+		<a href="photos.html">Photo Gallery</a>
+		<a href="events_calendar.html" target="_self">Events Calendar</a>
+		<div class="dropdown">
+		<a href="farm_members.html">Farming Area's</a>
+				<div class="dropdown-list">
+	
+					<a href="llamas.html">Llamas</a>
+					<a href="goats.html">Goats</a>
+					<!--<a href="sheep.html">Sheep</a>-->
+					<a href="birds.html">Chicken and Turkeys</a>
+					<a href="bees.html">Bees</a>
+					<a href="garden.html">Garden</a>		
+					
+				</div>
+		</div>
+		<a href="blog.html" target="_self">Blog</a>
+		<a href="estimate.html" target="_self">For Sale</a>
+		<a href="recommended_sites.html" target="_self">Recommended Sites</a>
+		<a href="contact_us.html" target="_self">Contact Us</a>
+		<a href="purchase.html" target="_self">Purchase SWAG</a>
+		<a href="about_us.html" target="_self">About Us</a>
+
+	</nav>
+
+<div class="snav-overlay snav-animate-opacity" onclick="snav_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="snav-container">
+  <span class="snav-opennav snav-xxlarge" onclick="snav_open()" style="position: fixed;">Menu ☰</span></div>
+  
+</header>
+	
+<h1> Sheep </h1>
+
+<script>
+function snav_open() 
+{
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+function snav_close() 
+{
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+</script>	
+	<main>
+	<div id = "main_content">	
+		<h2> Yes, they are smiling </h2>
+		<p>Meet our Southdown Baby Doll Sheep. Our Southdown Babydoll Sheep also have three primary purposes.  Their fiber can be spun into yarn, they are excellent grazers for pasture management and can be an excellent source of meat for the table.
+		</p>
+		<h3>Southdown Baby Doll</h3>
+		<img src="Images/babydoll.jpg" alt="Southdown_babydoll" width="378" height="280" title="Baby Doll Ewe"> 
+		<img src="Images/babydoll_bigdaddy.jpg" alt="babydoll_bigdaddy" width="378" height="375" title="Big Daddy chicken ride"> 
+		<br>
+		<p>
+		Our breeding pair will be used to start our own herd.  We spin by had at this point but will be looking into spinning wheels here soon to be able to reduce the amount of time required to spin by hand.
+		<h3>Interesting Southdown Baby Doll Facts</h3>
+			<ul>
+						<li>breed originated in East Sussex England around 200 years ago</li>
+						<li>can live up to 15-16 years of age</li>
+						<li>they are gentle and mix well with other animals</li>
+						<li>they don't have horns also called polled</li>
+						<li>fleece generally runs 19 to 22 microns, same class as cashmere</li>
+						<li>one of the best to blend with other fibers due to their high number of barbs per inch </li>
+						<li>are excellent deployed in vineyards and orchards since their short height prevents them from grazing on the inventory</li>
+			</ul>
+		</p>
+		
+	</main>
+	</div>
+	</div>
+</body>
+<footer>
+				
+				<link>
+				<a href= "mailto:bigdreamfarm.com@gmail.com">Contact bigDREAMfarm</a>
+				</link> 
+			</footer> 
+</html>

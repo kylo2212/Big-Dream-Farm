@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<!-- Ryan Clark UPDATED THIS PAGE WITH Chris S Updates from main pages - CSS FILES TO MAKE PAGE RESPONSIVE TO SCREEN SIZES AND STYLE -->
+<html lang="en">
+
+	<div id = "wrapper">
+	<head>
+		<meta charset="utf-8">
+		
+		<meta name= "description" content= " ">
+		
+		<meta name= "viewport" content="width=device-width, initial-scale=1.0">
+		<meta name= "viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,">
+		<meta name= "viewport" content="width-device-width, user-scalable=no"/>
+		
+		<meta name= "keywords" content= " ">
+		
+		<title> Bees </title>
+		
+		<div id = "page_title">
+		
+		</div>
+		
+		<link type="text/css" rel="stylesheet" href="bdf_stylesheet.css"/>
+		<link rel="stylesheet" href="responsive.css">
+		<link rel="stylesheet" href="sidenav2.css">
+	</head>
+<body>
+
+<header id="header">
+
+	<nav class="snav-sidenav snav-white snav-animate-left" style="display:none; z-index:5; position:fixed;" id="mySidenav">
+		<h4><a href="javascript:void(0)" onclick="snav_close()" class="snav-closenav snav-large" style="color:red; text-shadow:none;">Close ×</a></h4>
+  
+		<a href="index.html">Home</a>
+		<a href="photos.html">Photo Gallery</a>
+		<a href="events_calendar.html" target="_self">Events Calendar</a>
+		<div class="dropdown">
+		<a href="farm_members.html">Farming Area's</a>
+				<div class="dropdown-list">
+	
+					<a href="llamas.html">Llamas</a>
+					<a href="goats.html">Goats</a>
+					<a href="sheep.html">Sheep</a>
+					<a href="birds.html">Chicken and Turkeys</a>
+					<!--<a href="bees.html">Bees</a>-->
+					<a href="garden.html">Garden</a>		
+					
+				</div>
+		</div>
+		<a href="blog.html" target="_self">Blog</a>
+		<a href="estimate.html" target="_self">For Sale</a>
+		<a href="recommended_sites.html" target="_self">Recommended Sites</a>
+		<a href="contact_us.html" target="_self">Contact Us</a>
+		<a href="purchase.html" target="_self">Purchase SWAG</a>
+		<a href="about_us.html" target="_self">About Us</a>
+
+	</nav>
+
+<div class="snav-overlay snav-animate-opacity" onclick="snav_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="snav-container">
+  <span class="snav-opennav snav-xxlarge" onclick="snav_open()" style="position: fixed;">Menu ☰</span></div>
+  
+</header>
+	
+<h1> Bees </h1>
+
+<script>
+function snav_open() 
+{
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+function snav_close() 
+{
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+</script>	
+	<main>
+	<div id = "main_content">	
+	<h2> Buzzzzzz</h2>	
+	<img src="Images/bees_hives.jpg" alt="bee hives in the summer heat" width="271" height="361" title="Bees cooling off on the outside of the hives in the heat of summer "> 
+	<img src="Images/bees_cappedhoney.jpg" alt="full frame of honey" width="298" height="182" title="Our first full frame"> 
+	<h3> Honey bees </h3>
+	<p>We currently have two colonies out in our pasture of honey bees.  It is critical to understand becoming a bee keeper that there is a lot of up front cost in equipment and will require frequent checkin. They have certainly taught us a lot and are an extremely important part in our gardening and flowers.</p>
+	<h3>Interesting Bee Facts</h3>
+			<ul>
+				<li>honey bees never sleep</li>
+				<li>polliinate roughly 80% of all fruit, vegetable and seed crops in the U.S.</li>
+				<li>can fly 15 miles per hour</li>
+				<li>cover a 3 mile radius from their hive</li>
+				<li>wings stroke at 11,400 times per minute</li>
+				<li>colonies can have as many as 40,000 to 60,000 bees</li>
+				<li>the colony keeps its queen at 92-93 degrees regardless of outside temp</li>
+			</ul>
+	<h3> Benefits of Honey </h3>
+				<ul>
+					<li>Honey is the only food that includes all substances to sustain life including water</li>
+					<li>never spoils</li>	
+					<li>natural sweetner</li>
+					<li>soothes scratchy throats</li>
+				</ul>
+	<br>
+			
+	</main>
+	</div>
+	</div>
+</body>
+<footer>
+				
+				<link>
+				<a href= "mailto:bigdreamfarm.com@gmail.com">Contact bigDREAMfarm</a>
+				</link> 
+			</footer> 
+</html>

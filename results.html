@@ -1,0 +1,106 @@
+<DOCTYPE! html>
+     <!-- CHRIS SHARKEY UPDATED THIS PAGE WITH CSS FILES TO MAKE PAGE RESPONSIVE TO SCREEN SIZES AND STYLE -->
+
+<html lang="en" Style="background-color: #66cccc">
+
+	<div id = "wrapper">
+	<head>
+		<meta charset="utf-8">
+		
+		<meta name= "description" content= " ">
+		
+		<meta name= "viewport" content="width=device-width, initial-scale=1.0">
+		<meta name= "viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,">
+		<meta name= "viewport" content="width-device-width, user-scalable=no"/>
+		
+		<meta name= "keywords" content= " ">
+		
+		<title> Big Dream Farm: TShirt </title>
+		
+		<link rel="stylesheet" href="responsive.css">
+		<link rel="stylesheet" href="bdf_stylesheet_new.css">
+		<link rel="stylesheet" href="sidenav2.css">
+		
+		<script src="modernizr.custom.65897.js"></script>	
+	</head>
+
+<body Style="background-color: #66cccc;">
+
+<header id="header">
+
+	<nav class="snav-sidenav snav-white snav-animate-left" style="display:none; z-index:5; position:fixed; font-size: 180%; width: 70%;" id="mySidenav">
+		<h4><a href="javascript:void(0)" onclick="snav_close()" class="snav-closenav snav-large" style="color:red; text-shadow:none; font-size: 100%;">Close ×</a></h4>
+  
+		<a href="index.html" target="_self">Home</a>
+		<a href="photos.html">Photo Gallery</a>
+		<a href="events_calendar.html" target="_self">Events Calendar</a>
+		<div class="dropdown">
+		<a href="farm_members.html">Farming Area's</a>
+				<div class="dropdown-list">
+	
+					<a href="llamas.html">Lammas</a>
+					<a href="goats.html">Goats</a>
+					<a href="sheep.html">Sheep</a>
+					<a href="birds.html">Chicken and Turkeys</a>
+					<a href="bees.html">Bees</a>
+					<a href="garden.html">Garden</a>		
+					
+				</div>
+		</div>
+		<a href="blog.html" target="_self">Blog</a>
+		<a href="estimate.html" target="_self">For Sale</a>
+		<a href="recommended_sites.html" target="_self">Recommended Sites</a>
+		<a href="contact_us.html" target="_self">Contact Us</a>
+		<a href="about_us.html" target="_self">About Us</a>
+
+	</nav>
+
+<div class="snav-overlay snav-animate-opacity" onclick="snav_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="snav-container">
+  <span class="snav-opennav snav-xxlarge" onclick="snav_open()" style="position: fixed;">Menu ☰</span></div>
+  
+</header>
+
+<script>
+function snav_open() 
+{
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+function snav_close() 
+{
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+</script>
+
+		<div class = "container">	
+		<h1><img src="bdf.PNG" alt="bdf_logo" width="auto" height="auto" title="Big Dream Farm Logo"> </h1>
+	</div>
+
+   <article>
+      <h2>Your form has been submitted</h2>
+      <div class="results">
+         <h3>You entered the following data:</h3>
+   
+         <script>
+             var formData = location.search;
+             formData = formData.substring(1, formData.length);
+             while (formData.indexOf("+") !== -1) {
+                formData = formData.replace("+", " ");
+             }
+             formData = decodeURIComponent(formData);
+             var formArray = formData.split("&");
+             for (var i = 0; i < formArray.length; i = i + 1) {
+                document.write("<p>" + formArray[i] + "</p>");
+             }
+         </script>
+      </div>
+   </article>
+   <footer>
+
+   </footer>
+</body>
+</html>

@@ -1,0 +1,32 @@
+Comments			                        - Intro to JavaScript
+For Sale / Estimate.htm			        	- Working with Functions, Data Types, and Operators
+Events Calendar					        	- Building Arrays and Controlling Flow
+Our Project Works without Errors        	- Debugging and Error Handling
+Estimate.htm console logging    	        - Debugging and Error Handling
+Photo Gallery						        - Working with the Document Object Model (DOM) and DHTML
+Purchase SWAG						        - Enhancing & Validating Forms  
+Estimate.htm (Calendar Object (Pick Date)	- Using Object-Oriented JavaScript
+Purchase SWAG NAME SECTION			        - Manipulating Data in Strings & Arrays  
+Purchase SWAG Cookies			        	- Managing State Information & Security
+Minimized js	                            - Programming for Touchscreens & Mobile Devices
+Timer on Index Page					        - Updating Web Pages with AJAX
+Drop Downs for Index Page			        - Intro to JQuery  
+
+To Do list:
+Purchase SWAG to match Layout - Still Outstanding
+Minimize any JS - Ryan = In Progress
+Programming for Touchscreens & Mobile Devices (Chris, would responsive CSS changes also check the box for this since they account for mobile??)
+
+Completed:
+Single CSS for Page - Chris = COMPLETED (for Layout & Style,for Responsive webpage, for Navigation, TO ALL PAGES)
+Estimate.htm to match Layout - Chris = Completed
+Events Calendar.html Updated to current Month -Kirstie = COMPLETED
+Photo Gallery Zoom Function Doesn't Working - Kirstie = COMPLETED
+Purchase SWAG to match Layout - Chris / Ryan / Kirstie
+Better Placement of Timer - Kirstie = Completed
+Minimize any JS - Ryan = COMPLETED
+Chapter 7 Project - Ryan = Completed
+
+Utilities:
+This is an amazing interface with GIT that makes it sooo much easier to do your commits, pulls etc....  
+https://tortoisegit.org/

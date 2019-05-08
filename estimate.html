@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+   <!-- CHRIS SHARKEY UPDATED THIS PAGE WITH CSS FILES TO MAKE PAGE RESPONSIVE TO SCREEN SIZES AND STYLE -->
+
+
+<html lang="en">
+
+<head>
+
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <meta name= "viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,">
+   <meta name= "viewport" content="width-device-width, user-scalable=no"/>
+		
+   <title>big DREAM farm - For Sale</title>
+   
+
+   <link rel="stylesheet" media="screen and (min-device-width: 1000px)" href="fantrick.css" />
+   <link rel="stylesheet" href="sidenav2.css">
+<!--    <link rel="stylesheet" href="responsive.css"> -->
+
+<!-- **** TO MAKE THIS PAGE RESPONSIVE WITH CSS NEED TO ADD # CSS CODE FOR FORM AND OTHER ELEMENTS IN THIS PAGE **** -->
+   
+
+   <link href='http://fonts.googleapis.com/css?family=Mr+Bedfort' rel='stylesheet' type='text/css'>
+   
+   <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Racing+Sans+One' rel='stylesheet' type='text/css'>
+   
+   <script src="modernizr.custom.05819.js"></script>
+</head>
+
+<body>
+   <div id="container">
+      <header>
+
+		
+		<nav class="snav-sidenav snav-white snav-animate-left" style="display:none; z-index:5; position:fixed; width: 80%; height: auto; font-size: 60%;" id="mySidenav">
+		<h4><a href="javascript:void(0)" onclick="snav_close()" class="snav-closenav snav-large" style="color:red; text-shadow:none;">Close ×</a></h4>
+  
+
+		<a href="index.html">Home</a>
+		<a href="photos.html">Photo Gallery</a>
+		<div class="dropdown">
+		<a href="farm_members.html">Farming Area's</a>
+				<div class="dropdown-list">
+	
+					<a href="llamas.html">Lammas</a>
+					<a href="goats.html">Goats</a>
+					<a href="sheep.html">Sheep</a>
+					<a href="birds.html">Chicken and Turkeys</a>
+					<a href="bees.html">Bees</a>
+					<a href="garden.html">Garden</a>		
+					
+				</div>
+		</div>
+		<a href="blog.html" target="_self">Blog</a>
+		<a href="events_calendar.html" target="_self">Events Calendar</a>
+		<a href="recommended_sites.html" target="_self">Recommended Sites</a>
+		<a href="contact_us.html" target="_self">Contact Us</a>
+		<a href="purchase.html" target="_self">Purchase SWAG</a>		
+		<a href="about_us.html" target="_self">About Us</a>
+		
+
+	</nav>
+
+<div class="snav-overlay snav-animate-opacity" onclick="snav_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="snav-container">
+  <span class="snav-opennav snav-xxlarge" onclick="snav_open()" style="position: fixed; font-size: 100%;">Menu ☰</span></div>
+ 		 
+      </header>
+	  
+<script>
+function snav_open() 
+{
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+function snav_close() 
+{
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+</script>
+	  
+         <h1><center>
+            <img src="bdf.png" alt="big DREAM farm" title="" />
+         </center></h1>
+		 
+      <div id="info">
+	  
+	  	 <h2>Estimate</h2>
+         <p>Our hens are free range and receive lots of love in the form of table scraps.</p>
+         <p>Choose the custom options that fit your needs:</p>
+		 <p>(**Subject to Availiability**)</p>
+
+<!--          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Animals</a></li>
+            <li id="currentpage"><a href="#">Estimate</a></li>
+            <li><a href="digital.htm">Fiber 101</a></li>
+         </ul> -->
+      </div>
+        
+      <article>
+
+         <form id="estimateform">
+            <fieldset>
+               <legend><span>Eggs</span></legend>
+               <input type="number" min="0" max="4" id="chickenCost" value="0" />
+               <label for="chickenCost">
+                  <p># Dozen Mixed Size Chicken Eggs</p>
+                  <p>$3/doz</p>
+               </label>
+
+               <input type="number" min="0" id="duckCost" value="0" />
+               <label for="duckCost">
+                  <p># Dozen Duck Eggs</p>
+				  <p>$5/doz</p>
+               </label>
+
+               <input type="checkbox" id="washed" />
+               <label for="washed">
+                  <p>Washed(Requires Refridgeration)</p>
+                  <p>$1</p>
+               </label>
+
+               <input type="checkbox" id="allLarge" />
+               <label for="allLarge">
+                  <p>All Large Eggs</p>
+                  <p>$2</p>
+               </label>
+            </fieldset>
+            <fieldset>
+               <legend><span>Delivery</span></legend>
+               <input type="number" id="distance" value="0" />
+               <label for="distance">
+                  <p>Distance calculated from Grain Valley, MO</p>
+                  <p>$1/mi per dozen</p>
+               </label>
+            </fieldset>
+			<fieldset>
+				<legend><span>Pick a date</span></legend>
+				<input type="text" id="deliveryDate" />
+				<label for="distance">
+				<p>We reserve right to adjust delivery</p>
+				</label>
+			</fieldset>
+         </form>
+		 <div id="cal">
+         <div id="prev">&lt; previous</div>
+         <div id="next">next &gt;</div>
+         <table>
+            <caption></caption>
+            <tr>
+               <th>Sun</th>
+               <th>Mon</th>
+               <th>Tue</th>
+               <th>Wed</th>
+               <th>Thu</th>
+               <th>Fri</th>
+               <th>Sat</th>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+         </table>
+         <p id="close">close <span>&#9746;</span></p>
+      </div>
+      </article>
+      <aside>
+         <p>Total Estimate: <span id="estimate"></span></p>
+      </aside>
+      <footer>
+         <p>big DREAM farm &bull; Grain Valley, Missouri</p>
+      </footer>
+   </div>
+   <script src="ft.js"></script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE HTML>
+<!-- Ryan Clark UPDATED THIS PAGE WITH Chris S Updates from main pages - CSS FILES TO MAKE PAGE RESPONSIVE TO SCREEN SIZES AND STYLE -->
+<!-- Chris Sharkey UPDATED THIS PAGE To Fix Menu and adjust form input-->
+<html lang="en">
+    
+    <!-- THIS STYLE SECTION AND FOLLOWING SCRIPT SECTION WAS ADDED BY KIRSTIE TO CREATE THE STYLE AND FUNCTION OF THE MESSAGE POP UP -->
+<style>
+#jAlert_table, #jAlert_th, #jAlert_td{
+    border: 2px solid blue;
+    background-color:lightblue;
+    border-collapse: collapse;
+    width=100px;
+}
+
+#jAlert_th, #jAlert_td{
+    padding:5px;
+    padding-right:10px;
+    padding-left:10px;
+}
+
+#jAlert{
+    /* Position fixed */
+    position:fixed;
+    /* Center it! */
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
+}
+</style>
+<script>
+function myFunction() {
+
+    setTimeout(function(){ jAlert("Thank you for visiting BIG DREAM FARM!!", "<b>x</b>"); }, 1500);
+}
+
+function jAlert(text, customokay){
+	document.getElementById('jAlRem');
+	document.getElementById('jAlert_content').innerHTML = text;
+    document.getElementById('jAlert_ok').innerHTML = customokay;
+    
+    document.body.style.cursor="wait";
+}
+
+function jAlertagree(){
+    var parent = document.getElementById('jAlRem');
+    var child = document.getElementById('jAlert');
+    parent.removeChild(child);
+    
+    document.body.style.cursor="default";
+}
+
+ if (window.addEventListener) {
+   window.addEventListener("load", myFunction, false);
+} else if (window.attachEvent) {
+   window.attachEvent("onload", myFunction);
+}
+
+</script>
+
+
+	<head>
+		<meta charset="utf-8">
+		
+		<meta name= "description" content= " ">
+		
+		<meta name= "viewport" content="width=device-width, initial-scale=1.0">
+		<meta name= "viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,">
+		<meta name= "viewport" content="width-device-width, user-scalable=no"/>
+		
+		<meta name= "keywords" content= " ">
+		
+		<title> Contact Us </title>
+		
+		<div id = "page_title">
+		
+		</div>
+		
+		<link type="text/css" rel="stylesheet" href="bdf_stylesheet.css"/>
+		<link rel="stylesheet" href="responsive.css">
+		<link rel="stylesheet" href="sidenav2.css">
+		<style> label {float: none;} </style>
+	</head>
+	
+<body>
+    
+    <!-- THIS SECTION WAS ADDED TO HELP WITH THE MESSAGE WITH THE TIMER BY KIRSTIE -->
+<div id="jAlRem">
+    <div id="jAlert">
+        <table id="jAlert_table">
+            <tr id="jAlert_tr">
+                <td id="jAlert_td">  <p id="jAlert_content"></p>  </td>
+                <td id="jAlert_td">  <button id='jAlert_ok'  onclick="jAlertagree()"></button>  </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+	<header id= "header">
+	<nav class="snav-sidenav snav-white snav-animate-left" style="display:none; z-index:5; position:fixed;" id="mySidenav">
+		<h4><a href="javascript:void(0)" onclick="snav_close()" class="snav-closenav snav-large" style="color:red; text-shadow:none;">Close ×</a></h4>
+  
+		<a href="index.html">Home</a>
+		<a href="photos.html">Photo Gallery</a>
+		<a href="events_calendar.html" target="_self">Events Calendar</a>
+		<div class="dropdown">
+		<a href="farm_members.html">Farming Area's</a>
+				<div class="dropdown-list">
+	
+					<a href="llamas.html">Llamas</a>
+					<a href="goats.html">Goats</a>
+					<a href="sheep.html">Sheep</a>
+					<a href="birds.html">Chicken and Turkeys</a>
+					<a href="bees.html">Bees</a>
+					<a href="garden.html">Garden</a>		
+					
+				</div>
+		</div>
+		<a href="blog.html" target="_self">Blog</a>
+		<a href="estimate.html" target="_self">For Sale</a>
+		<a href="recommended_sites.html" target="_self">Recommended Sites</a>
+		<a href="purchase.html" target="_self">Purchase SWAG</a>
+		<a href="about_us.html" target="_self">About Us</a>
+
+	</nav>
+
+<div class="snav-overlay snav-animate-opacity" onclick="snav_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="snav-container">
+  <span class="snav-opennav snav-xxlarge" onclick="snav_open()" style="position: fixed;">Menu ☰</span></div>
+  
+</header>
+
+	<div>
+	<h1> Contact Us </h1>
+	</div>
+	
+<script>
+function snav_open() 
+{
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+function snav_close() 
+{
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+</script>
+<script>
+		function validateForm() 
+		{
+			if (document.forms[0].user_name.value == ""){
+				alert("Your name is not provided.  Please complete to proceed.");
+				return false;
+				}
+			if (document.forms[0].email_address.value == ""){
+				alert("Your email address is not provided. Please complete to proceed");
+				return false;
+				}
+				return true;
+	}
+	</script>
+	
+
+		
+			<main>
+			
+				<div id="main_content">
+					<form method ="post" action="mailto:bigdreamfarm.com@gmail.com" onsubmit="return validateForm();">
+					
+					<label for= "user_name">Name:</label> 
+					<input Style="width: 60%; height: 5%; font-size: 80%" type="text" name="user_name" id="user_name" 
+					placeholder="your first and last name"> 
+					<br>
+					<label for="email_address">Email: </label> 
+					<input Style="width: 60%; height: 5%; font-size: 80%" type="email" name="email_address" id="email_address" placeholder="you@yourdomain.com">
+					<br>
+					<fieldset>
+					<legend>Page</legend>
+					Select the page you are contacting us about: <br>
+					<input type="checkbox" name="" id="about_us" value="yes"> About Us<br>
+					<input type="checkbox" name="lammas" id="lammas" value="yes"> Lammas<br>
+					<input type="checkbox" name="goats" id="goats" value="yes"> Goats<br>
+					<input type="checkbox" name="sheep" id="sheep" value="yes"> Sheep<br>
+					<input type="checkbox" name="goats" id="goats" value="yes"> Goats<br>
+					<input type="checkbox" name="birds" id="birds" value="yes"> Chicken and Turkeys<br>
+					<input type="checkbox" name="bees" id="bees" value="yes"> Bees<br>
+					<input type="checkbox" name="garden" id="garden" value="yes"> Garden<br>
+					<input type="checkbox" name="blog" id="blog" value="yes"> Blog<br>
+					<input type="checkbox" name="sale" id="sale" value="yes"> For Sale<br>
+					</fieldset>
+					
+					<fieldset>
+					<legend>Referral Source</legend>
+					Select the option that best describes how you found us: <br>
+					<input type="radio" name="referral" id="refFriend" required="required" value="friend">a friend told me<br>
+					<input type="radio" name="referral" id="refInternet" required="required" value="internet">found on the internet<br>
+					<input type="radio" name="referral" id="refAnimalSwap" required="required" value="swap">met at animal swap<br>
+					<input type="radio" name="referral" id="refUs" required="required" value="Us">we told you<br>
+					<input type="radio" name="referral" id="refOther" required="required" value="other"> Other<br>
+					</fieldset>
+					
+					Tell us a little about yourself and what you are looking for:<br>
+					<textarea name="freeForm" id="freeForm" cols="60" rows="3"> Enter your response here </textarea>
+					<div id="related"> 
+					<input type="submit" name="submit" id="submit" value="Contact Us">
+					<input type="reset" name="reset" id="reset" value="Reset">
+				</div>
+				</form>
+				</div>
+			</main>
+		</body>
+			<footer>
+				
+				<link>
+				<a href= "mailto:bigdreamfarm.com@gmail.com">Contact bigDREAMfarm</a>
+				</link> 
+			</footer> 
+
+</html>
